@@ -2,14 +2,19 @@
 alias aledit='vim ~/.bashrc'
 alias alcon='source ~/.bashrc'
 alias vimedit='vim ~/.config/nvim/init.vim'
+alias v='vim'
 
 # Custom functions
 cl(){ cd "$1" && ls; }
+alias duls='du -shc * | sort -rh'
+alias l='ls --group-directories-first -1F'
+alias xboard='xclip -selection clipboard'
 
-alias fvim='vim $(fzf)'
+alias fvim='vim "$(fzf)"'
 
 # Shortcuts / Bookmarks
 alias notes='cl /home/tdog/my_folders/notes'
+alias daily='vim -p /home/tdog/my_folders/notes/todo.md /home/tdog/my_folders/notes/tav.md'
 
 alias todo='vim /home/tdog/my_folders/notes/todo.md'
 alias words='vim /home/tdog/my_folders/notes/words.md'
@@ -17,7 +22,7 @@ alias ideas='vim /home/tdog/my_folders/notes/ideas.md'
 
 # Git 
 alias gs='git status'
-
+alias gcm='git commit -m'
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -111,7 +116,7 @@ fi
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
+# alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
