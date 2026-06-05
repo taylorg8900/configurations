@@ -1,0 +1,7 @@
+# Shortcuts / Bookmarks
+alias notes='cl /home/tdog/my_folders/notes'
+alias daily='vim -p /home/tdog/my_folders/notes/todo.md /home/tdog/my_folders/notes/tav.md'
+
+alias todo='vim /home/tdog/my_folders/notes/todo.md'
+alias words='vim /home/tdog/my_folders/notes/words.md'
+alias ideas='vim /home/tdog/my_folders/notes/ideas.md'
