@@ -22,6 +22,7 @@ set autoindent
 :map <C-P> <C-W>w
 :map <Tab> gt
 :map <M-Space> <Esc>
+" :map! 
 
 
 let g:netrw_preview=1

@@ -1,16 +1,20 @@
+# Important Settings
+export MANPAGER='nvim +Man!'
+
+
 # Dotfile quickedits
-alias aledit='vim ~/.bashrc'
-alias alcon='source ~/.bashrc'
-alias vimedit='vim ~/.config/nvim/init.vim'
+alias bedit='vim ~/.bashrc'
+alias bcon='source ~/.bashrc'
+alias vedit='vim ~/.config/nvim/init.vim'
 alias v='vim'
 
 # Custom functions
-cl(){ cd "$1" && ls; }
+cl(){ cd "$1" && ls --group-directories-first; }
 alias duls='du -shc * | sort -rh'
 alias l='ls --group-directories-first -1F'
 alias xboard='xclip -selection clipboard'
 
-alias fvim='vim "$(fzf)"'
+alias fv='vim "$(fzf)"'
 
 # Shortcuts / Bookmarks
 alias notes='cl /home/tdog/my_folders/notes'
@@ -19,6 +23,9 @@ alias daily='vim -p /home/tdog/my_folders/notes/todo.md /home/tdog/my_folders/no
 alias todo='vim /home/tdog/my_folders/notes/todo.md'
 alias words='vim /home/tdog/my_folders/notes/words.md'
 alias ideas='vim /home/tdog/my_folders/notes/ideas.md'
+
+
+
 
 # Git 
 alias gs='git status'
